@@ -1,0 +1,60 @@
+  DMSoft.SkinCrafterLight.bmp - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v2.0.50727
+Assembly skincrafter.net-vs2005_light, Version=2.1.0.0, Culture=neutral, PublicKeyToken=93fe95f9332f7eb7: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Microsoft.VisualC, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Class resfinder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class DMSoft.SkinCrafterLight: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.Component
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Collections.Hashtable SCWndToSCNWMap IsByValue : Public, Static, InitOnly
+  Properties:
+    DMSoft.Skinset Skin 'get set' : 
+  Methods:
+    ApplySkin(): PrivateScope, Public, HideBySig
+    RemoveSkin(): PrivateScope, Public, HideBySig
+    UpdateWindow(Int32 IsLong): PrivateScope, Public, HideBySig
+    UpdateControl(Int32 IsLong): PrivateScope, Public, HideBySig
+    AddAdditionalThread(): PrivateScope, Public, HideBySig
+    DeleteAdditionalThread(): PrivateScope, Public, HideBySig
+    DecorateAs(Int32 IsLong, Int32 IsLong): PrivateScope, Public, HideBySig
+    ExcludeWnd(Int32 IsLong, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    IncludeWnd(Int32 IsLong, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    DoDecorate(Int32 IsLong): PrivateScope, Public, HideBySig
+    DoNotDecorate(Int32 IsLong): PrivateScope, Public, HideBySig
+    get_Skin(): PrivateScope, Public, HideBySig, SpecialName
+    set_Skin(Skinset): PrivateScope, Public, HideBySig, SpecialName
+Class SCNativeWindow: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.NativeWindow
+    Void .ctor(HWND__*, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Windows.Forms.Control, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    InitSCNW(Control, IntPtr): PrivateScope, Public, HideBySig
+    InitSCNW(HWND__*, IntPtr): PrivateScope, Public, HideBySig
+    DeinitSCNW(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Struct DMSoft.Skinset: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    UInt32 value__ IsLong : Public, SpecialName, RTSpecialName
+    DMSoft.Skinset Zolder = 4 : Public, Static, Literal, HasDefault
+    DMSoft.Skinset Exact = 3 : Public, Static, Literal, HasDefault
+    DMSoft.Skinset Elegant = 2 : Public, Static, Literal, HasDefault
+    DMSoft.Skinset Black_Pearl = 1 : Public, Static, Literal, HasDefault
+    DMSoft.Skinset None = 0 : Public, Static, Literal, HasDefault
